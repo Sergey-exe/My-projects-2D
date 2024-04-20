@@ -1,0 +1,4 @@
+repository "My project 2D@sergeydev2023_unity@cloud"
+  path "/"
+    br "/main"
+    co "/main"
