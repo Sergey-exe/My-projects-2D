@@ -5,13 +5,13 @@ public class SignalingOnTrigger : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private float _speed;
 
-    private bool _isPlaying;
+    private bool _isSoundPlaying;
 
     private void Update()
     {
         float maxSound = 1.0f;
 
-        if (_isPlaying)
+        if (_isSoundPlaying)
         {
             _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, maxSound, _speed * Time.deltaTime);
         }
@@ -31,13 +31,13 @@ public class SignalingOnTrigger : MonoBehaviour
         if (collision.GetComponent<HeroKnight>())
         {
             _audioSource.Play();
-            _isPlaying = true;
+            _isSoundPlaying = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.GetComponent<HeroKnight>())
-            _isPlaying = false;
+            _isSoundPlaying = false;
     }
 }
