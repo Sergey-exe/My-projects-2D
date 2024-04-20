@@ -33,8 +33,6 @@ public class SignalingOnTrigger : MonoBehaviour
             _audioSource.Play();
             _isPlaying = true;
         }
-            
-        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
