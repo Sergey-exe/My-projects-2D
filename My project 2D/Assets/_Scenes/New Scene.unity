@@ -894,9 +894,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1028971234}
-        m_TargetAssemblyTypeName: SoundPayer, Assembly-CSharp
-        m_MethodName: PlaySound1
+      - m_Target: {fileID: 443730512}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1796,7 +1796,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioMixer: {fileID: 24100000, guid: 2fefbf01bf1864e4a8bace29006f8db3, type: 2}
-  _audioMixerGroup: {fileID: 24300002, guid: 2fefbf01bf1864e4a8bace29006f8db3, type: 2}
 --- !u!114 &1028971234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,9 +2046,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1028971234}
-        m_TargetAssemblyTypeName: SoundPayer, Assembly-CSharp
-        m_MethodName: PlaySound2
+      - m_Target: {fileID: 1081998041}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2379,9 +2378,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1028971234}
-        m_TargetAssemblyTypeName: SoundPayer, Assembly-CSharp
-        m_MethodName: PlaySound3
+      - m_Target: {fileID: 1309599226}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

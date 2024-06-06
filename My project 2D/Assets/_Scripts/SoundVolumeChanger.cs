@@ -10,7 +10,6 @@ public class SoundVolumeChanger : MonoBehaviour
     private const string SoundtrackVolume = nameof(SoundtrackVolume);
 
     [SerializeField] private AudioMixer _audioMixer;
-    [SerializeField] private AudioMixerGroup _audioMixerGroup;
 
     private bool isMute = false;
 
@@ -19,24 +18,29 @@ public class SoundVolumeChanger : MonoBehaviour
         isMute = enabled;
 
         if (isMute == false)
-            _audioMixerGroup.audioMixer.SetFloat(MasterVolume, 0);
+            _audioMixer.SetFloat(MasterVolume, 0);
         else
-            _audioMixerGroup.audioMixer.SetFloat(MasterVolume, -80);
+            _audioMixer.SetFloat(MasterVolume, -80);
     }
 
     public void ChangeVolumeMaster(float volume)
     {
         if (isMute == false)
-            _audioMixer.SetFloat(MasterVolume, Mathf.Lerp(-80, 0, volume));
+            ChangeVolume(volume, MasterVolume);
     }
 
     public void ChangeVolumeButton(float volume)
     {
-        _audioMixer.SetFloat(ButtonsVolume, Mathf.Lerp(-80, 0, volume));
+        ChangeVolume(volume, ButtonsVolume);
     }
 
     public void ChangeVolumeSoundtrack(float volume)
     {
-        _audioMixer.SetFloat(SoundtrackVolume, Mathf.Lerp(-80, 0, volume));
+        ChangeVolume(volume, SoundtrackVolume);
+    }
+
+    public void ChangeVolume(float volume, string nameParameter)
+    {
+        _audioMixer.SetFloat(nameParameter, Mathf.Lerp(-80, 0, volume));
     }
 }
