@@ -41,6 +41,6 @@ public class SoundVolumeChanger : MonoBehaviour
 
     public void ChangeVolume(float volume, string nameParameter)
     {
-        _audioMixer.SetFloat(nameParameter, Mathf.Lerp(-80, 0, volume));
+        _audioMixer.SetFloat(nameParameter, Mathf.Log10(volume) * 20);
     }
 }

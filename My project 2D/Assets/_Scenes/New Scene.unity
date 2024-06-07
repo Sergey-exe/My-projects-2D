@@ -1701,7 +1701,6 @@ GameObject:
   - component: {fileID: 1028971231}
   - component: {fileID: 1028971230}
   - component: {fileID: 1028971233}
-  - component: {fileID: 1028971234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1796,23 +1795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioMixer: {fileID: 24100000, guid: 2fefbf01bf1864e4a8bace29006f8db3, type: 2}
---- !u!114 &1028971234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028971229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9507038bba7a1f42a81208ecc429abd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource1: {fileID: 443730512}
-  _audioSource2: {fileID: 1081998041}
-  _audioSource3: {fileID: 1309599226}
-  minPitch: 0.5
-  maxPitch: 1.5
 --- !u!1 &1044175382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,7 +2258,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1044175383}
   m_HandleRect: {fileID: 2115122611}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -2831,7 +2813,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1653927047}
   m_HandleRect: {fileID: 307202957}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -3178,7 +3160,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1078593538}
   m_HandleRect: {fileID: 238026026}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
